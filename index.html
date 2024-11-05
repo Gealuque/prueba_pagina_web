@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid_container">
+
+        <!--Logo y titulo-->
+        <header class="header" id="header">
+            <div class="container_header">
+                <div class="logo">
+                    <img src="./asset/img/logo_ppal.jpeg" alt="PicPets">
+                </div>
+                <div class="texto1">
+                    <p class="titulo">Pic Pets Fotografía</p>
+                    <p class="sub_titulo">Aquí fotografíamos hasta a la araña que vive en tu patio sin pagar arriendo</p>
+                </div>
+                <div class="m_hamb">
+                    <div class="linea"></div>
+                    <div class="linea"></div>
+                    <div class="linea"></div>
+                </div>
+            </div>
+
+
+
+        </header>
+
+        <!--Navegador-->
+
+        <div class="navegador">
+            <div class="container_navegador">
+                <a href="#portada"><i class="fa-solid fa-house nav_icon"></i></a>
+                <a href="#galeria"><i class="fa-solid fa-camera nav_icon"></i></a>
+                <a href="#"><i class="fa-solid fa-paw nav_icon"></i></a>
+                <a href="#"><i class="fa-solid fa-calendar-days nav_icon"></i></a>
+                <a href="#contacto"><i class="fa-solid fa-envelope nav_icon"></i></a>
+            </div>
+        </div>
+
+        <!--Portada-->
+
+        <div class="portada about" id="portada">
+            <div class="text_about1">
+                <p>Acerca de nosotros</p>
+            </div>
+            <div class="text_about2">
+                <p>Somos una Pyme encargada de retratar a los peluditos o pelones que alegran tu vida y tu corazón</p>
+            </div>
+        </div>
+
+
+        <!--Menu lateral o superior-->
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href=""></a>Gatos</li>
+                <li><a href=""></a>Tortugas</li>
+                <li><a href=""></a>Peces</li>
+                <li><a href=""></a>Perros</li>
+                <li><a href=""></a>Aves</li>
+                <li><a href=""></a>Gecko</li>
+                <li><a href=""></a>Conejos</li>
+                <li><a href=""></a>Roedores</li>
+            </ul>
+        </div>
+
+        <!--Galería de Fotos-->
+        <div class="galeria container_fotos" id="galeria">
+                <div class="fotos">
+                    <img src="./asset/img/table_cat.jpeg" class="photo" alt="mishi1">
+                    <img src="./asset/img/cute_cat.jpeg" class="photo" alt="mishi2">
+                    <img src="./asset/img/turtle.jpeg" class="photo" alt="tortuguita1">
+                    <img src="./asset/img/turtle_tongue.jpeg" class="photo" alt="tortuguita2">
+                    <img src="./asset/img/relax_turtle.jpeg" class="photo" alt="tortuguita3">
+                    <img src="./asset/img/sky_fish.jpeg" class="photo" alt="pez1">
+                    <img src="./asset/img/blue_fish.jpeg" class="photo" alt="pez2">
+                    <img src="./asset/img/dog_glasses.jpeg" class="photo" alt="perro1">
+                    <img src="./asset/img/box_dogs.jpeg" class="photo" alt="perro2">
+                    <img src="./asset/img/guaca.jpeg" class="photo" alt="ave1">
+                    <img src="./asset/img/claudio_and_black.jpeg" class="photo" alt="ave2">
+                    <img src="./asset/img/lucia.jpeg" class="photo" alt="ave3">
+                    <img src="./asset/img/cacu.jpeg" class="photo" alt="ave4">
+                    <img src="./asset/img/gecko_smile.jpeg" class="photo" alt="reptil1">
+                    <img src="./asset/img/camaleon.jpeg" class="photo" alt="reptil2">
+                    <img src="./asset/img/cut_bunny.jpeg" class="photo" alt="conejito1">
+                    <img src="./asset/img/black_bunny.jpeg" class="photo" alt="conejito2">
+                    <img src="./asset/img/birthday bunny.jpeg" class="photo" alt="conejito3">
+                    <img src="./asset/img/cute_rat.jpeg" class="photo" alt="roedor1">
+                    <img src="./asset/img/christmas_rat.jpeg" class="photo" alt="roedor2">
+                    <img src="./asset/img/hamster.jpeg" class="photo" alt="roedor3">
+                    <img src="./asset/img/cute_hamster.jpeg" class="photo" alt="roedor4">
+                </div>     
+            <div class="paginacion">
+                <a href="#" class="atras">«</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#" class="siguiente">»</a>
+            </div>
+        </div>
+
+
+        <!--Contacto-->
+        <section class="contacto" id="contacto">
+            <div class="container_contactos">
+                <p>Contáctame</p>
+                <form class="formulario_contacto">
+                    <input type="text" id="name" name="name"  placeholder="Nombre" class="text_formulario" required>
+                
+                    <input type="email" id="email" name="email" placeholder="Correo Electrónico" class="text_formulario" required>
+    
+                    <select id="tipo" name="Tipo" class="text_formulario"  required>
+                        <option value="">Aquí su mascota</option>
+                        <option value="gatos">Gatos</option>
+                        <option value="tortugas">Tortugas</option>
+                        <option value="peces">Peces</option>
+                        <option value="perros">Perros</option>
+                        <option value="aves">Aves</option>
+                        <option value="gecko">Gecko</option>
+                        <option value="conejos">Conejos</option>
+                        <option value="roedores">Roedores</option>
+                    </select>
+                    <button type="submit" class="boton">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer" id="footer">
+            <div class="container_footer">
+                <div class="iconos_footer">
+                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="./asset/img/instagram.png" alt="instagram"></a>
+                    <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr#" target="_blank"><img src="./asset/img/facebook.png" alt="facebook"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="./asset/img/linkedin.png" alt="linkedin"></a>
+                </div>
+                <div class="text_footer">
+                    <p> © 2024|Pic Pets™|Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

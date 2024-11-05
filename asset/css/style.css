@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'navegador'
+    'portada'
+    'galeria'
+    'contacto'
+    'footer'
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: 40px 30px 150px calc(100vh - 40px - 30px - 150px - 70px) 40px 30px;
+}
+
+/*Menus*/
+
+.header{
+    grid-area: header;
+    background-color: #000000;
+    height: 50px;
+}
+.container_header{
+    display: flex;
+}
+.linea{
+    height: 2px;
+    width: 100%;
+    background-color: #f3e3e3;
+}
+.m_hamb{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 8%;
+    height: 35px;
+    border: 0.5px solid rgb(5, 5, 5);
+}
+.menu {
+    display: none; 
+}
+.logo{
+    width: 13%;
+}
+.logo img{
+    width: 40px;
+    height: auto;
+}
+.texto1{
+    width: 75%;
+    height: auto;
+}
+.titulo{
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+}
+.sub_titulo{
+    font-size: xx-small;
+    color: rgba(255, 255, 255, 0.706);
+}
+
+/*Navegador*/
+.navegador{
+    grid-area: navegador;
+}
+
+.container_navegador{
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    justify-content: center;
+    height: 30px;
+    gap: 25px;
+}
+.nav_icon{
+    width: 0.5px;
+    height: 0.5px;
+    color: white;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.container_navegador a{
+    text-decoration: none;
+}
+.container_navegador a:hover{
+    transform: rotate(15deg);
+}
+.nav_icon:hover{
+    color: #00ffff;
+}
+
+/*Portada*/
+
+.portada{
+    grid-area: portada;
+}
+
+.about{
+    display: flex;
+    background-image: url(../img/fondo_portada.jpeg);
+    max-height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+.text_about1{
+    text-align: center;
+    padding-top: 50px;
+    width: 30%;
+    font-size: medium;
+}
+.text_about2{
+    width: 75%;
+    text-align: end;
+    font-size: small;
+    padding-left: 150px;
+    padding-right: 5px;
+    padding-top: 40px;
+}
+
+
+
+/*Galería*/
+.galeria{
+    grid-area: galeria;
+    background-color: #000000;
+    padding-top: 15px;
+}
+.container_fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    gap: 15px;
+}
+.photo{
+
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+/*paginación*/
+
+.paginacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginacion a {
+    text-decoration: none;
+    color: #fffdfd;
+    padding: 13px 15px;
+    margin: 0 5px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    font-size: x-small;
+    transition: all 0.4s ease;
+}
+.paginacion a:hover {
+    background-color: #000000;
+    color: white;
+    border-color: #00ffff;
+}
+.paginacion .active {
+    background-color: black;
+    color: white;
+    border-color: #00ffff;
+}
+.paginacion .atras,
+.paginacion .siguiente {
+    font-weight: bold;
+    color: #00ffff;
+}
+.paginacion .atras:hover,
+.paginacion .siguiente:hover {
+    background-color: #00ffff;
+    color: #000000;
+}
+
+/*contacto*/
+.contacto{
+    grid-area: contacto;
+}
+.container_contactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    gap: 2px;
+    font-size: x-small;
+    background-color: #000000;
+    color: #00ffff;
+}
+.formulario_contacto{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+}
+.text_formulario{
+    font-size: xx-small;
+}
+.boton{
+    font-size: xx-small;
+    border-radius: 5px;
+    color: white;
+    background-color: #333146;
+}
+
+
+/*footer*/
+.footer{
+    grid-area: footer;
+}
+.container_footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: xx-small;
+    margin-bottom: 0;
+    color: #00ffff;
+    background-color: #000000;
+}
+.iconos_footer{
+    width: 30%;
+    padding-left: 30px;
+}
+.iconos_footer img{
+    width: 17px;
+    height: auto;
+}
+.text_footer{
+    display: flex;
+    width: 60%;
+    height: auto;
+}
+
+/*Animaciones*/
+
